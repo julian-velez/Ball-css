@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.water-loader {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(90deg, #00a8ff, #3f51b5, #00a8ff);
+    border-radius: 50%;
+    animation: wave 2s infinite alternate;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(360px);
+    }
+}
